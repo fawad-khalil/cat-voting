@@ -61,8 +61,10 @@ A beautiful, responsive web application where users can browse random cat photos
 ## 🛠️ Available Scripts
 
 - `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
+- `npm run build` - Build app
+- `npm run preview` - Preview build
+- `npm run predeploy` - Build in production mode
+- `npm run deploy` - Deploy using GH Pages
 - `npm run lint` - Run ESLint
 - `npm run test` - Run unit tests
 
