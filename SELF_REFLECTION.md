@@ -16,6 +16,11 @@
 
 **Styling**: Tailwind CSS was chosen for rapid development and consistency. The trade-off is larger bundle size, but the utility-first approach speeds up development significantly. Custom CSS would be more performant but require more maintenance.
 
+**Tabs**: I implemented tabs using component state instead of libraries like react-tabs because I didn't want to add complexity layers for this minimal project. We can use react-tabs for the real-world projects instead of re-inventing the wheel.
+
+**Environments based configuration**
+We can do a lot by separating out the environments for development, QA, UAT and production. But it wasn't necessary for this minimal project.
+
 **Testing**: Implemented basic unit tests for demonstration. In a production environment, I would add integration tests and end-to-end tests. The current test coverage is minimal but shows the testing setup.
 
 ### Feature Implementation
@@ -25,8 +30,6 @@
 **Dark Mode**: Used Tailwind's dark mode class approach for simplicity. Could have used CSS custom properties for more granular control, but the current approach is sufficient and easier to maintain.
 
 **Error Handling**: Implemented toast notifications for user feedback. Could have used more sophisticated error boundaries, but toasts provide immediate feedback without disrupting the user experience.
-
-**Tabs**: I implemented tabs using component state instead of libraries like react-tabs because I didn't want to add complexity layers for this minimal project. We can use react-tabs for the real-world projects instead of re-inventing the wheel.
 
 ### Performance Considerations
 
