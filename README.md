@@ -18,34 +18,39 @@ A beautiful, responsive web application where users can browse random cat photos
 
 ### Prerequisites
 
-- Node.js 18+ 
+- Node.js 18+
 - npm or yarn
 - TheCatAPI key (free at https://thecatapi.com/)
 
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone <your-repo-url>
    cd cat-app
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Set up environment variables**
+
    ```bash
    cp .env.example .env
    ```
-   
+
    Edit `.env` and add your TheCatAPI key:
+
    ```env
    VITE_CAT_API_KEY=your_actual_api_key_here
    ```
 
 4. **Start the development server**
+
    ```bash
    npm run dev
    ```
@@ -103,31 +108,35 @@ src/
 
 ### Environment Variables
 
-| Variable | Description | Required |
-|----------|-------------|----------|
-| `VITE_CAT_API_KEY` | Your TheCatAPI key | Yes |
+| Variable           | Description        | Required |
+| ------------------ | ------------------ | -------- |
+| `VITE_CAT_API_KEY` | Your TheCatAPI key | Yes      |
 
 ## 🎯 Core Functionality
 
 ### Gallery View
+
 - Displays a responsive grid of random cat images
 - Each card shows breed information and temperament
 - Up/down voting buttons with visual feedback
 - Real-time score display after voting
 
 ### Voting System
+
 - One vote per image per user
 - Votes are persisted via TheCatAPI
 - Instant visual feedback
 - Score calculation and display
 
 ### My Votes Tab
+
 - Complete voting history
 - Vote type indicators (up/down)
 - Timestamp information
 - Responsive grid layout
 
 ### Dark Mode
+
 - System preference detection
 - Manual toggle in header
 - Persistent across sessions
@@ -136,6 +145,7 @@ src/
 ## 🧪 Testing
 
 Run the test suite:
+
 ```bash
 npm run test
 ```
@@ -150,16 +160,12 @@ The built files will be in the `dist/` directory, ready for deployment.
 
 ## 🌐 Deployment
 
-### Netlify (Recommended)
-1. Connect your GitHub repository
-2. Set build command: `npm run build`
-3. Set publish directory: `dist`
-4. Add environment variable: `VITE_CAT_API_KEY`
+### Github Pages
 
-### Vercel
-1. Import your repository
-2. Framework preset: Vite
-3. Add environment variable: `VITE_CAT_API_KEY`
+1. Open a terminal and navigate to root project dir
+2. Configure environment variables in relevant .env file. Please refer to .env.example for examples
+3. Run `$ npm run predeploy`
+4. Run `$ npm run deploy`
 
 ## 🤝 Contributing
 
